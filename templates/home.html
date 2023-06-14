@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The best Router</title>
+    <link rel="stylesheet" href="static/main.css">
+    <link rel="icon" href="../static/LogoS.png" type="image/png">
+</head>
+<body style="background-image: url('/static/Paisaje.jpg'); background-size: cover; background-repeat: no-repeat; background-position: center;">
+  <header>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="../static/Logo.png" alt="Logo">
+        </div>
+        <ul class="navbar-links">
+            <li><a href="/">Inicio</a></li>
+            <li><a href="{{ url_for('servicio')}}">Servicio</a></li>
+            <li><a href="{{ url_for('nosotros')}}">Nosotros</a></li>
+        </ul>
+    </nav>
+  </header>
+  <div class="content">
+    <h1 class="title">The best Router</h1>
+    <p class="description">Nuesta aplicación revolucionaria en el campo del transporte de gas utiliza tecnología de vanguardia y análisis de grafos para ofrecer soluciones estratégicas y eficientes. Con una interfaz intuitiva, permite explorar y evaluar alternativas de distribución de gas, considerando factores como capacidad, costos y riesgos geopolíticos. Esta herramienta ayuda a empresas y gobiernos a diversificar sus fuentes de suministro, fortalecer la seguridad energética y tomar decisiones informadas en la industria del gas, con el objetivo de un futuro más estable y sostenible en el transporte de este recurso vital.</p>
+    <a href="{{ url_for('bestRouter')}}" class="app-button" style="text-decoration: none;">Abrir aplicacion</a>
+  </div>
+</body>
+</html>
